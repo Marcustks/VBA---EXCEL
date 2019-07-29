@@ -1,0 +1,14 @@
+Function extr.numero(texto As String) As Double
+
+    Dim novo_texto As String
+    novo_texto = ""
+    
+    For i = 1 To Len(texto)
+        If Asc(Mid(texto, i, 1)) >= 48 And Asc(Mid(texto, i, 1)) <= 57 Then
+            novo_texto = novo_texto & Mid(texto, i, 1)
+        End If
+    Next
+    
+    RETORNAR_NUMERO = CDbl(novo_texto)
+
+End Function
