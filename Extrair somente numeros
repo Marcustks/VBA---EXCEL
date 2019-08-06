@@ -1,0 +1,1 @@
+Text.Combine(List.RemoveNulls(List.Transform(Text.ToList([Column1]),each if Value.Is(Value.FromText(_), type number) then _ else null)))
